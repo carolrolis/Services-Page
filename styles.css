@@ -53,7 +53,6 @@ nav > ul > li {
 nav > ul > li:hover {
   transform:scale(1.5,1.5);
   transition: 400ms;
-  border-radius: ;
 }
 
 a {
@@ -75,15 +74,11 @@ main {
   width:100%;
 }
 
-#introduction {
-  height:400px;
-}
-
 #qualities {
   margin-top:65px;
 }
 
-#i-text, #ip-text, #p-text, #pri-text {
+.text {
   margin:20px;
   font-size:x-large;
 }
@@ -103,20 +98,20 @@ main {
   margin-bottom:12px;
 }
 
-#fast, #personal, #trans {
+.quality {
   display:flex;
   align-items: center;
   margin:10px 25% 0px 25%;
   gap:10px;
 }
 
-#fast2, #personal2, #trans2 {
+.qtext {
   max-width:50%;
   margin:auto;
   margin-bottom:50px;
 }
 
-#projects, #p-text, #pri-text {
+#projects {
   padding-top:100px;
   margin-bottom:20px;
 }
@@ -142,7 +137,7 @@ main {
   transition: 400ms;
 }
 
-.p-text-2 {
+.ptext {
   font-size: large;
   margin:15px;
   text-align:center;
@@ -162,19 +157,17 @@ main {
   padding-bottom:150px;
 }
 
-#form-p, #wiki-p, #gallery-p {
+.price {
   display:flex;
   justify-content:center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
 }
 
-#message, #message2 {
+.message {
   margin:15px;
 }
-
-
 
 #email {
   width:300px;
@@ -194,7 +187,7 @@ main {
   font-size: larger;
   font-weight:bolder;
   margin-bottom:10px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #contact {
@@ -206,17 +199,15 @@ footer {
 }
 
 
-
+@media only screen and (min-width:1650px) {
+  #header-img{
+    max-width:3%;
+  }
+}
 
 @media only screen and (max-width:600px) {
-  body {
-    
-    overflow-x:hidden;
-    margin:0;
-  }
-
-  header {
-    width:100%;
+  *{
+  overflow-x:hidden;
   }
 
   #header-img {
@@ -241,21 +232,26 @@ footer {
     margin-left:5px;
   }
 
-  #fast {
+  .quality {
     inline-size: 300px;
+    margin:auto;
+    padding-left:10%;
   }
 
-  .fast2, .personal2, .trans2 {
-    inline-size: 300px;
+  .text {
+    font-size:20px;
   }
 
   #projects {
-    margin-top:400px;
+    margin-top:100px;
+  }
+  
+  #introduction {
+    margin:0;
   }
 
   .project, #nav-bar {
-    max-width:300px;
-    
+    max-width:300px; 
   }
 
   footer > p > br:first-of-type {
